@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",                         // Usa CommonJS como módulo
+    "declaration": true,                          // Genera archivos `.d.ts`
+    "removeComments": true,                       // Elimina comentarios de salida
+    "emitDecoratorMetadata": true,                // Necesario para trabajar con decoradores (como @Entity, @Injectable)
+    "experimentalDecorators": true,               // Permite el uso de decoradores
+    "allowSyntheticDefaultImports": true,         // Soporta importaciones por defecto
+    "target": "ES2021",                           // Especifica la versión de ECMAScript
+    "sourceMap": true,                            // Genera mapas de fuente para depuración
+    "outDir": "./dist",                           // Compilar todo a la carpeta `dist`
+    "baseUrl": "./",                              // Establecer la raíz de módulos a la carpeta actual
+    "incremental": true,                          // Mejorar la compilación incremental
+    "skipLibCheck": true,                         // Omite la comprobación de las bibliotecas
+    "strict": true,                               // Habilitar las comprobaciones estrictas (puedes ajustarlo si es necesario)
+    "strictNullChecks": true,                     // Habilitar chequeo estricto de valores nulos
+    "noImplicitAny": true,                        // Evitar el uso de `any`
+    "strictBindCallApply": true,                  // Activar comprobación estricta para los métodos `bind`, `call`, `apply`
+    "forceConsistentCasingInFileNames": true,     // Asegurarse de que los nombres de archivo son consistentes
+    "noFallthroughCasesInSwitch": true,           // Evitar la caída en las declaraciones `switch`
+    "moduleResolution": "node",                   // Usar el sistema de resolución de módulos de Node.js
+    "esModuleInterop": true                       // Permite importar módulos de CommonJS con sintaxis ES6
+  },
+  "include": [
+    "src/**/*.ts"  // Incluir todos los archivos TypeScript dentro de la carpeta `src`
+  ]
+}
